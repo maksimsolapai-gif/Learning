@@ -1,2 +1,2 @@
 # Learning
-my repository for test and learn
+my repository for testing and learning
