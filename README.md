@@ -1,3 +1,3 @@
 # Learning
-my repository for testing and learning
-**Description**
+my repository for testing and learningm **Git**
+## Description
