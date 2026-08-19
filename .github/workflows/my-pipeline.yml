@@ -15,10 +15,17 @@ jobs:
     steps:
       - name: Print Hello Massage in testing
         run: echo "Hello world from testing"
-      
+
+      - name: Git clone my repo
+        uses: actions/checkout@v1
+
+      - name: List curren folder
+        run: ls -la
+         
 
   my_deploy:
     runs-on: ubuntu-latest
+    needs: my_tasting
 
     steps:
       - name: Print Hello Massage in deploy

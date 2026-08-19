@@ -1,0 +1,17 @@
+on: push
+name: Slack Notification Demo
+jobs:
+  slackNotification:
+    name: Slack Notification
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Slack Notification
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.MY_SECRET }}
+        SLACK_CHANNEL: general          # Имя канала (опционально)
+        SLACK_COLOR: '#36a64f'          # Цвет полоски сбоку сообщения (HEX)
+        SLACK_USERNAME: GitHub Bot      # Имя отправителя в чате
+        SLACK_TITLE: New Deployment     # Заголовок сообщения
+        SLACK_MESSAGE: 'Commit pushed!' # Текст сообщения
