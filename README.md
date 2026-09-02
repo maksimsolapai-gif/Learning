@@ -1,7 +1,7 @@
 # 06.IasC.Terraform.and.Terragrunt.Workshop
 ---
 
-### 📂 Структура директорий проекта
+### 📁 Final Repository Directory Structure
 
 В соответствии с требованиями воркшопа и принципом DRY (Don't Repeat Yourself), проект организован следующим образом:
 
